@@ -14,9 +14,8 @@ spec:
     spec:
       containers:
         - name: users
-          image: anhdiepmmk/kub-demo-users:v1
+          image: anhdiepmmk/kub-demo-users:v3
           env:
             - name: AUTH_HOST
-              value: "localhost:80"
-        - name: auth
-          image: anhdiepmmk/kub-demo-auth:latest
+              # value: "10.100.159.98:80"
+              value: "auth-service.default"
