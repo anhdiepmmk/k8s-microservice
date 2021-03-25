@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: anhdiepmmk/kub-demo-task:latest
+          image: anhdiepmmk/kub-demo-task:v2
           env:
             - name: AUTH_HOST
               value: "auth-service.default"
