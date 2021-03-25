@@ -14,4 +14,9 @@ spec:
     spec:
       containers:
         - name: users
-          image: anhdiepmmk/kub-demo-users:latest
+          image: anhdiepmmk/kub-demo-users:v1
+          env:
+            - name: AUTH_HOST
+              value: "localhost:80"
+        - name: auth
+          image: anhdiepmmk/kub-demo-auth:latest
