@@ -57,9 +57,11 @@ app.post('/login', async (req, res) => {
   // const response = await axios.get(
   //   'http://auth/token/' + hashedPassword + '/' + password
   // );
-  const response = { status: 200, data: {
-    token: 'abc'
-  }};
+  const response = { 
+    status: 200, data: {
+      token: 'abc'
+    }
+  };
   if (response.status === 200) {
     return res.status(200).json({ token: response.data.token });
   }
